@@ -43,24 +43,3 @@
 .outlined-button {
   @apply text-primaryText main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 text-sm;
 }
-
-/* Preventing FOUC */
-@font-face {
-  font-display: var(--fontsource-Inter-font-display, optional);
-}
-
-html {
-  background-color: #26272b;
-  overflow-x: hidden;
-  scroll-behavior: smooth !important;
-}
-
-main {
-  @apply bg-bgDark2;
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--font-nacelle);
-}

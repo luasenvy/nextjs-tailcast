@@ -21,8 +21,7 @@ export default {
         quoteIconColor: "rgb(178, 184, 205)",
       },
       fontFamily: {
-        nacelle: ["var(--font-nacelle)", "sans-serif"],
-        pretendard: ["var(--font-pretendard)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
       },
       screens: {
         xs: "530px",
