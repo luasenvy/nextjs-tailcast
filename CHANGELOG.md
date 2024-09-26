@@ -1,22 +1,47 @@
-# Changelog
+# CHANGELOG.md
 
-## 1.0.0 (02-06-2024)
+## [4.0.0] - 2024-09-11
 
-- add changelog
-- add first tag and Github release
-- update package.json & readme
+Redesign the entire template
 
-## 1.0.1 (03-06-2024)
+## [3.3.0] - 2023-12-08
 
-- update all packages
-- add contributing guidelines
-- fix console errors
-- hide feature divider
+Update to Next.js 14
+Update dependencies
 
-## 1.0.2 (05-06-2024)
+## [3.2.2] - 2023-10-04
 
-- add blog section and article page
-- optimize theme class names
-- fix visual bugs
-- improve hover states on buttons
-- improve accessibility
+Update Twitter icon
+Update dependencies
+
+## [3.2.0] - 2023-05-31
+
+Update dependencies and fix some issues
+
+## [3.1.0] - 2023-05-07
+
+Modal video improvements
+
+## [3.0.0] - 2023-04-12
+
+Conversion to Next.js
+
+## [2.0.3] - 2023-03-28
+
+Fix video
+
+## [2.0.2] - 2023-03-28
+
+Add self-hosted video
+
+## [2.0.1] - 2023-02-16
+
+Remove header links
+
+## [2.0.0] - 2023-02-16
+
+Replace Cruip CSS with Tailwind CSS
+
+## [1.0.0] - 2020-04-07
+
+First release

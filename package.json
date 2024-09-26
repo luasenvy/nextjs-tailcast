@@ -1,34 +1,44 @@
 {
   "name": "tailcast",
-  "type": "module",
-  "version": "1.0.2",
-  "license": "MIT",
-  "description": "Dark themed website template built on AstroJS, designed for fictional startup",
+  "description": "Tailcast Theme for Next.js",
+  "version": "1.0.0",
   "author": {
-    "name": "Mateusz Wyrębek (matt765)",
-    "email": "mateusz.wyrebek@gmail.com",
-    "url": "https://matt765-portfolio.vercel.app/"
+    "name": "luasenvy",
+    "email": "luas.envy@gmail.com",
+    "url": "https://www.luas.kr"
   },
-  "private": true,
+  "license": "MIT",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "build": "rm -rf .next && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.0",
-    "@fontsource/inter": "^5.0.18",
-    "astro": "^4.9.2",
-    "framer-motion": "^11.2.10",
-    "npm": "^10.8.1",
-    "npm-check-updates": "^16.14.20",
-    "tailwindcss": "^3.4.3"
+    "next": "^14.2.13"
   },
   "devDependencies": {
-    "@astrojs/react": "^3.4.0",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@types/node": "^22.7.2",
+    "@types/react": "^18.3.9",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "framer-motion": "^11.7.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8.4.47",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2"
   }
 }
