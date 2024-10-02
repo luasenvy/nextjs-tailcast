@@ -22,10 +22,10 @@ const articleData: ArticleData = {
   footer: "~ Duncan Idaho",
 };
 
+export const metadata = {
+  title: articleData.title,
+};
+
 export default function Home() {
-  return (
-    <>
-      <Article articleData={articleData} />
-    </>
-  );
+  return <Article articleData={articleData} />;
 }
