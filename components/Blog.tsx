@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
+import Link from "@/components/ViewTransitionLink";
+
 import blog1 from "@/public/images/blog1.png";
 import blog2 from "@/public/images/blog2.png";
 import blog3 from "@/public/images/blog3.png";
@@ -50,7 +52,7 @@ export default function Blog() {
             </div>
             <div className="flex 2xl:w-[1200px] lg:w-[1000px] xl:w-[1150px] flex-wrap -mx-4 items-start h-auto sm:h-[30rem] lg:h-[31rem]  xl:h-[35rem]">
               <div className="flex sm:hidden lg:flex w-11/12 mx-auto sm:ml-0 sm:mr-0 lg:w-1/2 xl:w-3/5 px-4 mb-8 lg:mb-0  h-full">
-                <a href="/blog/article">
+                <Link href="/blog/article">
                   <div className="p-6 sm:p-10 bg-bgDark3 rounded-3xl h-full hover:bg-bgDark3Hover transition cursor-pointer">
                     <Image
                       src={blogData[0].image}
@@ -63,7 +65,7 @@ export default function Blog() {
                     </h3>
                     <p className="text-secondaryText leading-loose">{blogData[0].subtitle}</p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="hidden sm:flex mx-auto lg:ml-0 lg:mr-0 w-11/12 sm:w-4/5 lg:w-1/2 xl:w-2/5 px-4  flex-col justify-between h-full">
                 {blogData.slice(1).map((post, index) => (

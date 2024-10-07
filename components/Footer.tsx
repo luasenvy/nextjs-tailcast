@@ -2,6 +2,7 @@ import FacebookIcon from "@/components/Icons/FacebookIcon";
 import InstagramIcon from "@/components/Icons/InstagramIcon";
 import TwitterIcon from "@/components/Icons/TwitterIcon";
 import TailcastLogo from "@/components/Logos/TailcastLogo";
+import Link from "@/components/ViewTransitionLink";
 
 const footerData = [
   {
@@ -40,37 +41,37 @@ export default function Footer() {
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
                 Dashboard images were made using free Dark Admin dashboard that you can find
-                <a
+                <Link
                   href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
                   target="_blank"
                   className="text-gray-100 ml-1.5 "
                   aria-label="Dark Admin Dashboard"
                 >
                   here.
-                </a>
+                </Link>
               </p>
               <div className="w-36 mx-auto lg:mx-0">
-                <a
+                <Link
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] outlined-button"
                   href="#"
                   aria-label="Facebook"
                 >
                   <FacebookIcon />
-                </a>
-                <a
+                </Link>
+                <Link
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] pl-[0.55rem] outlined-button"
                   href="#"
                   aria-label="Twitter"
                 >
                   <TwitterIcon />
-                </a>
-                <a
+                </Link>
+                <Link
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] pl-[0.55rem] outlined-button"
                   href="#"
                   aria-label="Instagram"
                 >
                   <InstagramIcon />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="w-full lg:w-2/3  lg:pl-16 hidden lg:flex flex-wrap justify-between">
@@ -79,9 +80,13 @@ export default function Footer() {
                 <ul>
                   {footerData[0].items.map((item, index) => (
                     <li key={`${item}-${index}`} className="mb-4">
-                      <a className="text-gray-400 hover:text-gray-300" href="#" aria-label={item}>
+                      <Link
+                        className="text-gray-400 hover:text-gray-300"
+                        href="#"
+                        aria-label={item}
+                      >
                         {item}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -91,9 +96,13 @@ export default function Footer() {
                 <ul>
                   {footerData[1].items.map((item, index) => (
                     <li key={`${item}-${index}`} className="mb-4">
-                      <a className="text-gray-400 hover:text-gray-300" href="#" aria-label={item}>
+                      <Link
+                        className="text-gray-400 hover:text-gray-300"
+                        href="#"
+                        aria-label={item}
+                      >
                         {item}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -103,9 +112,13 @@ export default function Footer() {
                 <ul>
                   {footerData[2].items.map((item, index) => (
                     <li key={`${item}-${index}`} className="mb-4">
-                      <a className="text-gray-400 hover:text-gray-300" href="#" aria-label={item}>
+                      <Link
+                        className="text-gray-400 hover:text-gray-300"
+                        href="#"
+                        aria-label={item}
+                      >
                         {item}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
