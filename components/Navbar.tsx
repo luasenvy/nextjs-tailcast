@@ -7,6 +7,7 @@ import GithubIcon from "@/components/Icons/GithubIcon";
 import TailcastLogo from "@/components/Logos/TailcastLogo";
 
 import Link from "@/components/ViewTransitionLink";
+import ViewTransitionLink from "@/components/ViewTransitionLink";
 
 const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },
@@ -48,14 +49,14 @@ export default function Navbar() {
         >
           <div className="hidden lg:flex h-full pl-12 pb-2">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
-              <a
+              <ViewTransitionLink
                 className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
                 href={href}
                 aria-label={ariaLabel}
                 key={label}
               >
                 {label}
-              </a>
+              </ViewTransitionLink>
             ))}
           </div>
         </motion.div>
@@ -66,7 +67,7 @@ export default function Navbar() {
           exit={{ opacity: 0 }}
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
-            <a
+            <ViewTransitionLink
               className="text-white main-border-gray rounded-xl
            bg-bgDark2 hover:bg-bgDark3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
               href="https://github.com/matt765/Tidestream"
@@ -75,7 +76,7 @@ export default function Navbar() {
             >
               <GithubIcon />
               <span className="pt-px">Source code</span>
-            </a>
+            </ViewTransitionLink>
           </div>
         </motion.div>
         <div
@@ -102,7 +103,7 @@ export default function Navbar() {
         "
             >
               {navbarLinks.map(({ label, href, ariaLabel }) => (
-                <a
+                <ViewTransitionLink
                   key={href}
                   className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
                   href={href}
@@ -110,16 +111,16 @@ export default function Navbar() {
                   aria-label={ariaLabel}
                 >
                   {label}
-                </a>
+                </ViewTransitionLink>
               ))}
-              <a
+              <ViewTransitionLink
                 className="outlined-button pl-6 pr-8 pt-2 pb-2  flex"
                 href="https://github.com/matt765/Tidestream"
                 target="_blank"
               >
                 <GithubIcon />
                 Source code
-              </a>
+              </ViewTransitionLink>
             </div>
           </motion.div>
         )}

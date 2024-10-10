@@ -2,7 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "./theme.css";
+html {
+  background-color: #26272b;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
 
 @keyframes fade-in {
   from { opacity: 0; }
@@ -13,9 +17,103 @@
 }
 
 ::view-transition-old(root) {
-  animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
+  animation: 240ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
 }
 
 ::view-transition-new(root) {
-  animation: 210ms cubic-bezier(0, 0, 0.2, 1) both fade-in;
+  animation: 240ms cubic-bezier(0, 0, 0.2, 1) both fade-in;
+}
+
+/* Typography */
+
+.block-title {
+  @apply text-primaryText text-3xl font-bold tracking-normal;
+}
+
+.block-big-title {
+  @apply text-primaryText text-4xl xl:text-5xl font-bold tracking-normal;
+}
+
+.block-subtitle {
+  @apply text-xs text-secondaryColor tracking-wider font-bold uppercase;
+}
+
+.content-title {
+  @apply text-primaryText text-lg font-bold tracking-normal;
+}
+
+.content-text-white {
+  @apply text-primaryText text-base leading-relaxed;
+}
+
+.content-text-gray {
+  @apply text-gray-400 text-base;
+}
+
+/* Borders */
+
+.main-border-gray {
+  @apply border border-solid border-mainBorder;
+}
+
+.main-border-gray-darker {
+  @apply border border-solid border-mainBorderDarker;
+}
+
+/* Buttons */
+
+.contained-button {
+  @apply rounded-lg font-bold bg-primaryColor text-primaryText flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+}
+
+.outlined-button {
+  @apply text-primaryText main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 text-sm;
+}
+
+/* Diagonals */
+.shape-divider-bottom-1665343298 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.shape-divider-bottom-1665343298 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px;
+}
+.hero-title-gradient {
+  background: -webkit-linear-gradient(white, #b4add1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Features Top */
+
+.shape-divider-bottom-1665696614 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.shape-divider-bottom-1665696614 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 127px;
+  transform: rotateY(180deg);
+}
+
+/* Features Bottom */
+
+.shape-divider-top-1665696661 {
+  overflow: hidden;
+  line-height: 0;
+}
+.shape-divider-top-1665696661 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 127px;
+  transform: rotateY(180deg);
 }

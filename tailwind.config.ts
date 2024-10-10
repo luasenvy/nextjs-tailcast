@@ -20,9 +20,6 @@ export default {
         mainBorderDarker: "rgb(255,255,255,0.07)",
         quoteIconColor: "rgb(178, 184, 205)",
       },
-      fontFamily: {
-        inter: ["var(--font-inter)", "sans-serif"],
-      },
       screens: {
         xs: "530px",
         sm: "640px",

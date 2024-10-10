@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import Link from "@/components/ViewTransitionLink";
 
+import ViewTransitionLink from "@/components/ViewTransitionLink";
 import blog1 from "@/public/images/blog1.png";
 import blog2 from "@/public/images/blog2.png";
 import blog3 from "@/public/images/blog3.png";
@@ -69,7 +70,7 @@ export default function Blog() {
               </div>
               <div className="hidden sm:flex mx-auto lg:ml-0 lg:mr-0 w-11/12 sm:w-4/5 lg:w-1/2 xl:w-2/5 px-4  flex-col justify-between h-full">
                 {blogData.slice(1).map((post, index) => (
-                  <a
+                  <ViewTransitionLink
                     href="/blog/article"
                     key={`${post.title}-${index}`}
                     className=" flex  gap-4 p-10 bg-bgDark3 rounded-3xl  min-h-1/2 h-1/2 max-h-[47%]
@@ -87,7 +88,7 @@ export default function Blog() {
                       className="rounded-3xl mb-6 w-[9rem] h-[9rem] lg:w-auto lg:h-auto xl:w-full"
                       aria-label={post.title}
                     />
-                  </a>
+                  </ViewTransitionLink>
                 ))}
               </div>
             </div>
