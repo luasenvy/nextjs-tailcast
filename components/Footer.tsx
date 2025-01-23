@@ -1,8 +1,9 @@
+import Link from "next/link";
+
 import FacebookIcon from "@/components/Icons/FacebookIcon";
 import InstagramIcon from "@/components/Icons/InstagramIcon";
 import TwitterIcon from "@/components/Icons/TwitterIcon";
 import TailcastLogo from "@/components/Logos/TailcastLogo";
-import Link from "@/components/ViewTransitionLink";
 
 const footerData = [
   {
