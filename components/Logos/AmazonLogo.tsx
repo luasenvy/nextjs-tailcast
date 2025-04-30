@@ -1,4 +1,4 @@
-export default function AmazonLogo() {
+export function AmazonLogo() {
   return (
     <svg
       width="107"

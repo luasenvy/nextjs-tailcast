@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
-import InvitationModal from "./InvitationModal";
+import { InvitationModal } from "@/components/InvitationModal";
 
 import dashboard from "@/public/images/dashboard.jpg";
 
-export default function Hero() {
+export function Hero() {
   const isModalState = useState<boolean | undefined>(false);
 
   const [isModalOpen, setIsModalOpen] = isModalState;
 
   return (
     <section
-      className="w-screen  flex justify-center items-center bg-bgDark1 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
+      className="w-screen flex justify-center items-center bg-dark1 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
       id="home"
     >
       <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
@@ -24,7 +24,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="text-secondaryColor text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
+          <h3 className="text-secondary text-sm sm:text-base mb-6 sm:mt-32 mt-16 font-bold">
             Discover new data flow
           </h3>
         </motion.div>
@@ -33,11 +33,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
         >
-          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-8 md:px-20 lg:px-4">
+          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-text-primary px-8 sm:px-8 md:px-20 lg:px-4">
             <h1 className="inline md:hidden">Analytics</h1>
             <h1 className="hidden md:inline">Analytic tools suite</h1>
           </div>
-          <h1 className="mt-2 sm:mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-20 md:px-24 lg:px-24">
+          <h1 className="mt-2 sm:mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-text-primary px-8 sm:px-20 md:px-24 lg:px-24">
             for developers
           </h1>
         </motion.div>
@@ -46,7 +46,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
+          <h2 className="text-text-secondary text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48">
             Experience seamless business integrations and powerful insights with our cutting-edge
             analytic tools.
           </h2>
@@ -65,7 +65,7 @@ export default function Hero() {
               Get Started
             </button>
             <button
-              className="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-primaryColor transition"
+              className="w-64 sm:w-52 h-12 rounded-xl font-bold text-text-primary border border-solid flex justify-center items-center cursor-pointer bg-dark2 hover:bg-dark3 border-primary transition"
               onClick={() => setIsModalOpen(true)}
               aria-label="Live demo"
             >
@@ -78,7 +78,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0, zIndex: 20 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <div className="relative w-screen flex justify-center ">
+          <div className="relative w-screen flex justify-center">
             <Image
               src={dashboard}
               alt="Dashboard image"
@@ -86,18 +86,18 @@ export default function Hero() {
             />
           </div>
         </motion.div>
-        <div className="relative w-screen flex justify-center ">
+        <div className="relative w-screen flex justify-center">
           <div className="shape-divider-bottom-1665343298 mt-4 sm:mt-16 md:mt-52 hidden lg:block">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1200 120"
               preserveAspectRatio="none"
-              className="bg-bgDark2"
+              className="bg-dark2"
             >
               <path
                 d="M1200 0L0 0 598.97 114.72 1200 0z"
-                className="shape-fill bg-bgDark1  fill-bgDark1"
+                className="shape-fill bg-dark1 fill-dark1"
               ></path>
             </svg>
           </div>

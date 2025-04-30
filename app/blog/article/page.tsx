@@ -1,4 +1,6 @@
-import Article, { type ArticleData } from "@/components/Article";
+import type { ArticleData } from "@/components/Article";
+import { Article } from "@/components/Article";
+
 import blog1 from "@/public/images/blog1.jpg";
 
 const articleData: ArticleData = {
@@ -26,6 +28,6 @@ export const metadata = {
   title: articleData.title,
 };
 
-export default function Home() {
+export default function ArticlePage() {
   return <Article articleData={articleData} />;
 }

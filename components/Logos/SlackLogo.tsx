@@ -1,4 +1,4 @@
-export default function SlackLogo() {
+export function SlackLogo() {
   return (
     <svg
       width="127"

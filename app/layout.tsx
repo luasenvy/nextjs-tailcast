@@ -1,11 +1,12 @@
-import classnames from "classnames";
 import { Inter } from "next/font/google";
 
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import ScrollUpButton from "@/components/ScrollUpButton";
+import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/Navbar";
+import { ScrollUpButton } from "@/components/ScrollUpButton";
 
-import "@/styles/global.css";
+import { cn } from "@/lib/utils";
+
+import "@/styles/tailwind.css";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -17,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={classnames(inter.className, "text-base antialiased break-keep bg-bgDark2")}>
+      <body className={cn(inter.className, "text-base antialiased break-keep bg-dark2")}>
         <main>
           <Navbar />
           {children}

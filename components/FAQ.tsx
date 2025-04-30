@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+import { cn } from "@/lib/utils";
+
 const FAQData = [
   {
     question: "Can I upgrade or downgrade my plan at any time?",
@@ -37,15 +39,16 @@ const FAQBox = ({ defaultOpen, title, content }: FAQBoxProps) => {
 
   return (
     <div
-      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition"
+      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8 rounded-3xl bg-dark3 main-border-gray-darker mb-4 relative hover:bg-dark3-hover cursor-pointer transition"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div className="flex flex-col p-2  justify-center items-start">
+      <div className="flex flex-col p-2 justify-center items-start">
         <h3 className=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">{title}</h3>
         <p
-          className={`text-secondaryText pt-4 transition-height duration-300 overflow-hidden ${
-            isOpen ? "max-h-96" : "max-h-0"
-          }`}
+          className={cn("text-text-secondary pt-4 transition-height duration-300 overflow-hidden", {
+            "max-h-96": isOpen,
+            "max-h-0": !isOpen,
+          })}
         >
           {content}
         </p>
@@ -57,9 +60,10 @@ const FAQBox = ({ defaultOpen, title, content }: FAQBoxProps) => {
           viewBox="0 0 20 20"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={`transition-all duration-500  ${
-            isOpen ? "rotate-[180deg]" : "rotate-[270deg]"
-          }`}
+          className={cn("transition-all duration-300", {
+            "rotate-[180deg]": isOpen,
+            "rotate-[90deg]": !isOpen,
+          })}
         >
           <path
             d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"
@@ -74,7 +78,7 @@ const FAQBox = ({ defaultOpen, title, content }: FAQBoxProps) => {
   );
 };
 
-export default function FAQ() {
+export function FAQ() {
   return (
     <section className="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-blueGray-50 overflow-hidden">
       <div className="absolute -top-10" id="FAQ" />

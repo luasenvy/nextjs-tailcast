@@ -1,4 +1,4 @@
-export default function NetflixLogo() {
+export function NetflixLogo() {
   return (
     <svg
       width="119"

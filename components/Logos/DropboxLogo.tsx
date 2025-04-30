@@ -1,4 +1,4 @@
-export default function DropboxLogo() {
+export function DropboxLogo() {
   return (
     <svg
       width="160"

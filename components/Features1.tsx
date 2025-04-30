@@ -4,16 +4,17 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
-import CheckArrowIcon from "@/components/Icons/CheckArrowIcon";
+import { CheckArrowIcon } from "@/components/Icons/CheckArrowIcon";
+
 import feature1 from "@/public/images/feature1.jpg";
 import feature2 from "@/public/images/feature2.jpg";
 import feature3 from "@/public/images/feature3.jpg";
 import feature4 from "@/public/images/feature4.jpg";
 
-export default function Features1() {
+export function Features1() {
   return (
     <section
-      className="w-full bg-bgDark2 pt-24 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0    md:pt-[12vw] lg:pt-16"
+      className="w-full bg-dark2 pt-24 -mt-8 mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0    md:pt-[12vw] lg:pt-16"
       id="features"
     >
       <motion.div
@@ -29,11 +30,11 @@ export default function Features1() {
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
                 Unlike any tool you used before
               </h2>
-              <p className="mb-10 text-secondaryText leading-loose">
+              <p className="mb-10 text-text-secondary leading-loose">
                 Discover a new level of data analysis with our innovative and user-friendly
                 platform. Transform your business needs with actionable insights.
               </p>
-              <ul className="mb-6 text-primaryText">
+              <ul className="mb-6 text-text-primary">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
                   <span>Real-time data visualization</span>
@@ -51,37 +52,37 @@ export default function Features1() {
           </div>
           <div className="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
             <div className="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
-              <div className="mb-4 py-3 pl-3 pr-2 rounded">
+              <div className="mb-4 py-3 pl-3 pr-2 rounded-sm">
                 <Image
                   src={feature1}
                   alt="Feature image 1"
-                  className="rounded-xl  main-border-gray mx-auto sm:mx-unset"
+                  className="rounded-xl main-border-gray mx-auto sm:mx-unset"
                   aria-label="Feature image 1"
                 />
               </div>
-              <div className="py-3 pl-3 pr-2 rounded ">
+              <div className="py-3 pl-3 pr-2 rounded-sm">
                 <Image
                   src={feature2}
                   alt="Feature image 2"
-                  className="rounded-xl  main-border-gray mx-auto sm:mx-unset"
+                  className="rounded-xl main-border-gray mx-auto sm:mx-unset"
                   aria-label="Feature image 2"
                 />
               </div>
             </div>
-            <div className="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
-              <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
+            <div className="w-1/2 lg:mt-20 pt-12 lg:pt-0 px-2 hidden sm:inline-block">
+              <div className="mb-4 py-3 pl-3 pr-2 rounded-lg">
                 <Image
                   src={feature3}
                   alt="Feature image 3"
-                  className="rounded-xl  main-border-gray"
+                  className="rounded-xl main-border-gray"
                   aria-label="Feature image 3"
                 />
               </div>
-              <div className="py-3 pl-3 pr-2 rounded-lg ">
+              <div className="py-3 pl-3 pr-2 rounded-lg">
                 <Image
                   src={feature4}
                   alt="Feature image 4"
-                  className="rounded-xl  main-border-gray"
+                  className="rounded-xl main-border-gray"
                   aria-label="Feature image 4"
                 />
               </div>

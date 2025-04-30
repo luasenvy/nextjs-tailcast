@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --primary: hsl(239 83.5% 66.7%);
+  --secondary: hsl(239 84.3 80%);
+  --text-primary: hsl(0 0% 100%);
+  --text-secondary: hsl(213 5.9% 70%);
+  --dark1: hsl(225 6.1% 12.9%);
+  --dark2: hsl(228 6.2% 15.9%);
+  --dark3: hsl(230 5.9% 20%);
+  --dark3-hover: hsl(231 6% 22.9%);
+  --dark-transparent: hsl(225 6.1% 12.9% / 0.7);
+  --dark-transparent-darker: hsl(255 6.1% 12.9% / 0.5);
+  --dark-transparent-lighter: hsl(230 5.9% 20% / 0.7);
+  --border: hsl(0 0% 100% / 0.15);
+  --border-darker: hsl(0 0% 100% / 0.07);
+  --quote-icon: hsl(227 21.3% 75.1%);
+  --scroll: hsl(60 9.1% 97.8% / .3);
+
+  --breakpoint-xs: 530px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+.dark {
+  --scroll: hsl(24 9.8% 10% / .3);
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-dark1: var(--dark1);
+  --color-dark2: var(--dark2);
+  --color-dark3: var(--dark3);
+  --color-dark3-hover: var(--dark3-hover);
+  --color-dark-transparent: var(--dark-transparent);
+  --color-dark-transparent-darker: var(--dark-transparent-darker);
+  --color-dark-transparent-lighter: var(--dark-transparent-lighter);
+  --color-border: var(--border);
+  --color-border-darker: var(--border-darker);
+  --color-quote-icon: var(--quote-icon);
+  --color-scroll: var(--scroll);
+}
+
+@layer base {
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-scroll);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  html {
+    @apply overflow-x-hidden;
+    @apply scroll-smooth;
+  }
+
+  button:not([disabled]),
+  [role="button"]:not([disabled]) {
+    cursor: pointer;
+  }
+}
+
+/* Typography */
+@utility block-title {
+  @apply text-text-primary text-3xl font-bold tracking-normal;
+}
+
+@utility block-big-title {
+  @apply text-text-primary text-4xl xl:text-5xl font-bold tracking-normal;
+}
+
+@utility block-subtitle {
+  @apply text-xs text-secondary tracking-wider font-bold uppercase;
+}
+
+@utility content-title {
+  @apply text-text-primary text-lg font-bold tracking-normal;
+}
+
+@utility content-text-white {
+  @apply text-text-primary text-base leading-relaxed;
+}
+
+@utility content-text-gray {
+  @apply text-gray-400 text-base;
+}
+
+/* Borders */
+@utility main-border-gray {
+  @apply border border-solid border-border;
+}
+
+@utility main-border-gray-darker {
+  @apply border border-solid border-border-darker;
+}
+
+/* Buttons */
+@utility contained-button {
+  @apply rounded-lg font-bold bg-primary text-text-primary flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+}
+
+@utility outlined-button {
+  @apply text-text-primary main-border-gray rounded-xl bg-dark2 hover:bg-dark3 border-gray-700 text-sm;
+}
+
+/* Diagonals */
+@utility shape-divider-bottom-1665343298 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  &> svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+  }
+}
+
+@utility hero-title-gradient {
+  background: -webkit-linear-gradient(white, #b4add1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Features Top */
+@utility shape-divider-bottom-1665696614 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  &> svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 127px;
+    transform: rotateY(180deg);
+  }
+}
+
+/* Features Bottom */
+@utility shape-divider-top-1665696661 {
+  overflow: hidden;
+  line-height: 0;
+  &> svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 127px;
+    transform: rotateY(180deg);
+  }
+}

@@ -1,10 +1,10 @@
-export default function SpotifyLogo() {
+export function SpotifyLogo() {
   return (
     <svg
       width="107"
       height="32"
       viewBox="0 0 107 32"
-      className="fill-[rgb(174,178,183)]  lg:ml-2"
+      className="fill-[rgb(174,178,183)] lg:ml-2"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clipPath="url(#clip0)">

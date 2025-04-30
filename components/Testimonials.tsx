@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
-import QuoteIcon from "@/components/Icons/QuoteIcon";
+import { QuoteIcon } from "@/components/Icons/QuoteIcon";
 import testimonial1 from "@/public/images/testimonial1.png";
 import testimonial2 from "@/public/images/testimonial2.png";
 import testimonial3 from "@/public/images/testimonial3.png";
@@ -33,9 +33,9 @@ const testimonialsData = [
   },
 ];
 
-export default function Testimonials() {
+export function Testimonials() {
   return (
-    <section className="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-bgDark2 relative">
+    <section className="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-dark2 relative">
       <div className="absolute -top-16" id="feedback" />
       <div className="flex flex-col w-full lg:w-[1150px] justify-center">
         <motion.div
@@ -52,7 +52,7 @@ export default function Testimonials() {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
             {testimonialsData.map((testimonial, index) => (
               <div
-                className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4"
+                className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 main-border-gray-darker rounded-xl bg-dark3 flex flex-col px-6 py-4"
                 key={`${testimonial.customerName}-${index}`}
               >
                 <div className="flex mb-2">

@@ -1,4 +1,4 @@
-export default function StripeLogo() {
+export function StripeLogo() {
   return (
     <svg
       width="77"

@@ -2,16 +2,16 @@
 
 import { motion } from "framer-motion";
 
-import AmazonLogo from "@/components/Logos/AmazonLogo";
-import DropboxLogo from "@/components/Logos/DropboxLogo";
-import NetflixLogo from "@/components/Logos/NetflixLogo";
-import SlackLogo from "@/components/Logos/SlackLogo";
-import SpotifyLogo from "@/components/Logos/SpotifyLogo";
-import StripeLogo from "@/components/Logos/StripeLogo";
+import { AmazonLogo } from "@/components/Logos/AmazonLogo";
+import { DropboxLogo } from "@/components/Logos/DropboxLogo";
+import { NetflixLogo } from "@/components/Logos/NetflixLogo";
+import { SlackLogo } from "@/components/Logos/SlackLogo";
+import { SpotifyLogo } from "@/components/Logos/SpotifyLogo";
+import { StripeLogo } from "@/components/Logos/StripeLogo";
 
-export default function Brands() {
+export function Brands() {
   return (
-    <section className="py-12 sm:py-24 bg-bgDark1 w-full  lg:mt-16 mb-8 lg:mb-16">
+    <section className="py-12 sm:py-24 bg-dark1 w-full lg:mt-16 mb-8 lg:mb-16">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -22,10 +22,10 @@ export default function Brands() {
           <div className="flex lg:flex-row flex-col items-center -mx-4 justify-center lg:text-left text-center">
             <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
               <div className="flex flex-col">
-                <h2 className="mb-2  text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-primaryText">
+                <h2 className="mb-2 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-text-primary">
                   Trusted by brands
                 </h2>
-                <h2 className=" text-4xl  sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-secondaryColor">
+                <h2 className=" text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-secondary">
                   all over the world
                 </h2>
               </div>
@@ -35,10 +35,10 @@ export default function Brands() {
                 <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
                   <AmazonLogo />
                 </div>
-                <div className="w-1/2 sm:w-1/3 py-6 flex  justify-center">
+                <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
                   <DropboxLogo />
                 </div>
-                <div className="w-1/2 sm:w-1/3 py-6 flex  justify-center">
+                <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
                   <NetflixLogo />
                 </div>
                 <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
@@ -48,7 +48,7 @@ export default function Brands() {
                 <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
                   <SpotifyLogo />
                 </div>
-                <div className="w-1/2 sm:w-1/3  py-6 flex  justify-center">
+                <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
                   <SlackLogo />
                 </div>
               </div>
