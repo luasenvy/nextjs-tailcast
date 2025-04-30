@@ -72,7 +72,7 @@ export function Blog() {
                   <Link
                     href="/blog/article"
                     key={`${post.title}-${index}`}
-                    className=" flex gap-4 p-10 bg-dark3 rounded-3xl min-h-1/2 h-1/2 max-h-[47%]
+                    className=" flex gap-4 p-10 bg-dark3 rounded-3xl h-[47%]
                   hover:bg-dark3-hover transition cursor-pointer"
                   >
                     <div className="pt-2">
