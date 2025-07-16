@@ -6,13 +6,13 @@ import { useState } from "react";
 
 import { InvitationModal } from "@/components/InvitationModal";
 
-import featuresdiagonal from "@/public/images/featuresdiagonal.jpg";
+import featuresdiagonal from "@/public/images/featuresdiagonal.webp";
 
 export function FeaturesDiagonal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-dark1">
+    <section className="flex w-full flex-col items-center justify-center bg-dark1 lg:mb-16">
       <div className="shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"
@@ -30,10 +30,10 @@ export function FeaturesDiagonal() {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className=" 2xl:w-[1150px] xl:w-[1050px] md:w-4/5 flex justify-center bg-dark1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
-          <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
+        <div className=" mx-auto flex flex-col justify-center bg-dark1 pt-12 pb-8 md:w-4/5 lg:flex-row lg:pt-24 lg:pb-20 xl:w-[1050px] 2xl:w-[1150px]">
+          <div className="mx-auto flex w-3/4 flex-col lg:mx-unset lg:w-1/2">
             <span className="block-subtitle">Accelerate Your Success</span>
-            <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title">
+            <h2 className="block-big-title mt-10 mb-8 text-4xl lg:text-5xl">
               Build &amp; Launch without problems
             </h2>
             <p className="mb-16 text-text-secondary leading-loose">
@@ -42,18 +42,18 @@ export function FeaturesDiagonal() {
               analytics
             </p>
             <button
-              className="w-[210px] h-12 contained-button mr-10 "
+              className="contained-button mr-10 h-12 w-[210px] "
               onClick={() => setIsModalOpen(true)}
               aria-label="Get started"
             >
               Get Started
             </button>
           </div>
-          <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
+          <div className="mx-auto flex w-4/5 justify-center pt-16 lg:w-1/2 lg:pt-0 lg:pl-16">
             <Image
               src={featuresdiagonal}
               alt="Feature image"
-              className="rounded-xl main-border-gray"
+              className="main-border-gray rounded-xl"
             />
           </div>
         </div>

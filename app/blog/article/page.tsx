@@ -1,7 +1,7 @@
 import type { ArticleData } from "@/components/Article";
 import { Article } from "@/components/Article";
 
-import blog1 from "@/public/images/blog1.jpg";
+import blog1 from "@/public/images/blog1.webp";
 
 const articleData: ArticleData = {
   title: "AI and Machine Learning",
