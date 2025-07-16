@@ -39,13 +39,13 @@ const FAQBox = ({ defaultOpen, title, content }: FAQBoxProps) => {
 
   return (
     <div
-      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8 rounded-3xl bg-dark3 main-border-gray-darker mb-4 relative hover:bg-dark3-hover cursor-pointer transition"
+      className="main-border-gray-darker relative mb-4 cursor-pointer rounded-3xl bg-dark3 px-3 pt-2 pb-2 transition hover:bg-dark3-hover sm:px-8 sm:pt-6"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div className="flex flex-col p-2 justify-center items-start">
-        <h3 className=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">{title}</h3>
+      <div className="flex flex-col items-start justify-center p-2">
+        <h3 className=" pt-3 pr-8 content-title sm:pt-0 sm:pr-0">{title}</h3>
         <p
-          className={cn("text-text-secondary pt-4 transition-height duration-300 overflow-hidden", {
+          className={cn("overflow-hidden pt-4 text-text-secondary transition-height duration-300", {
             "max-h-96": isOpen,
             "max-h-0": !isOpen,
           })}
@@ -80,19 +80,19 @@ const FAQBox = ({ defaultOpen, title, content }: FAQBoxProps) => {
 
 export function FAQ() {
   return (
-    <section className="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-blueGray-50 overflow-hidden">
-      <div className="absolute -top-10" id="FAQ" />
+    <section className="-mt-8 relative overflow-hidden bg-blueGray-50 pt-12 pb-16 sm:mt-0 sm:pt-16">
+      <div className="-top-10 absolute" id="FAQ" />
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
-          <div className="md:max-w-4xl mx-auto">
-            <p className="mb-7 block-subtitle text-center">Have any questions?</p>
-            <h2 className="mb-16 block-big-title text-center">Frequently Asked Questions</h2>
-            <div className="mb-11 flex flex-wrap -m-1">
+        <div className="container relative z-10 mx-auto w-11/12 px-2 sm:w-full sm:px-8 lg:px-4">
+          <div className="mx-auto md:max-w-4xl">
+            <p className="block-subtitle mb-7 text-center">Have any questions?</p>
+            <h2 className="block-big-title mb-16 text-center">Frequently Asked Questions</h2>
+            <div className="-m-1 mb-11 flex flex-wrap">
               {FAQData.map((item, index) => (
                 <div className="w-full p-1" key={`${item.question}-${index}`}>
                   <FAQBox

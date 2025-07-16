@@ -11,44 +11,44 @@ import { StripeLogo } from "@/components/Logos/StripeLogo";
 
 export function Brands() {
   return (
-    <section className="py-12 sm:py-24 bg-dark1 w-full lg:mt-16 mb-8 lg:mb-16">
+    <section className="mb-8 w-full bg-dark1 py-12 sm:py-24 lg:mt-16 lg:mb-16">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="container px-4 mx-auto 2xl:w-[1200px] xl:w-[1100px] lg:w-[1000px] md:w-4/5">
-          <div className="flex lg:flex-row flex-col items-center -mx-4 justify-center lg:text-left text-center">
-            <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
+        <div className="container mx-auto px-4 md:w-4/5 lg:w-[1000px] xl:w-[1100px] 2xl:w-[1200px]">
+          <div className="-mx-4 flex flex-col items-center justify-center text-center lg:flex-row lg:text-left">
+            <div className="mb-12 w-full px-4 lg:mb-0 lg:w-1/2">
               <div className="flex flex-col">
-                <h2 className="mb-2 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-text-primary">
+                <h2 className="mb-2 font-bold text-4xl text-text-primary tracking-normal sm:text-5xl 2xl:text-6xl">
                   Trusted by brands
                 </h2>
-                <h2 className=" text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-secondary">
+                <h2 className=" font-bold text-4xl text-secondary tracking-normal sm:text-5xl 2xl:text-6xl">
                   all over the world
                 </h2>
               </div>
             </div>
-            <div className="w-2/3 sm:w-[620px] lg:w-1/2 mx-auto lg:mx-0 lg:pl-10">
-              <div className="flex flex-wrap -m-4">
-                <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
+            <div className="mx-auto w-2/3 sm:w-[620px] lg:mx-0 lg:w-1/2 lg:pl-10">
+              <div className="-m-4 flex flex-wrap">
+                <div className="flex w-1/2 justify-center py-6 sm:w-1/3">
                   <AmazonLogo />
                 </div>
-                <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
+                <div className="flex w-1/2 justify-center py-6 sm:w-1/3">
                   <DropboxLogo />
                 </div>
-                <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
+                <div className="flex w-1/2 justify-center py-6 sm:w-1/3">
                   <NetflixLogo />
                 </div>
-                <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
+                <div className="flex w-1/2 justify-center py-6 sm:w-1/3">
                   <StripeLogo />
                 </div>
 
-                <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
+                <div className="flex w-1/2 justify-center py-6 sm:w-1/3">
                   <SpotifyLogo />
                 </div>
-                <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
+                <div className="flex w-1/2 justify-center py-6 sm:w-1/3">
                   <SlackLogo />
                 </div>
               </div>

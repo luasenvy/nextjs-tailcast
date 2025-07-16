@@ -18,28 +18,28 @@ export interface ArticleProps {
 export function Article({ articleData }: ArticleProps) {
   const { title, subtitle, date, image, content, footer } = articleData;
   return (
-    <div className="flex justify-center bg-dark2 relative pt-2">
+    <div className="relative flex justify-center bg-dark2 pt-2">
       <div className="px-2 sm:px-4">
-        <article className=" p-8 text-center rounded-3xl w-full lg:w-[1200px] 2xl:w-[1400px] mb-24 mt-16 sm:mt-24">
+        <article className=" mt-16 mb-24 w-full rounded-3xl p-8 text-center sm:mt-24 lg:w-[1200px] 2xl:w-[1400px]">
           <header className="mb-12">
-            <div className="text-sm text-text-secondary my-4">{date}</div>
-            <h1 className="text-[2rem] xs:text-[2.8rem] lg:text-[3.5rem] font-bold text-text-primary mb-4">
+            <div className="my-4 text-sm text-text-secondary">{date}</div>
+            <h1 className="mb-4 font-bold text-[2rem] text-text-primary xs:text-[2.8rem] lg:text-[3.5rem]">
               {title}
             </h1>
-            <p className="text-lg text-text-secondary mb-4">{subtitle}</p>
+            <p className="mb-4 text-lg text-text-secondary">{subtitle}</p>
           </header>
           <Image
             src={image}
             alt={title}
-            className="rounded-3xl mb-8 w-10/12 md:w-3/4 mx-auto mt-8"
+            className="mx-auto mt-8 mb-8 w-10/12 rounded-3xl md:w-3/4"
             aria-label={title}
           />
           <section
-            className="text-text-secondary !leading-8 sm:!leading-10 sm:text-xl text-left sm:text-justify mx-auto w-full md:w-10/12 lg:w-2/3 mt-16"
+            className="!leading-8 sm:!leading-10 mx-auto mt-16 w-full text-left text-text-secondary sm:text-justify sm:text-xl md:w-10/12 lg:w-2/3"
             aria-labelledby="content-title"
             dangerouslySetInnerHTML={{ __html: content }}
           />
-          <div className="w-4/5 lg:w-2/3 text-right mx-auto mt-8 text-text-primary text-xl">
+          <div className="mx-auto mt-8 w-4/5 text-right text-text-primary text-xl lg:w-2/3">
             {footer}
           </div>
         </article>

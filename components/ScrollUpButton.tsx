@@ -29,7 +29,7 @@ export function ScrollUpButton() {
     <>
       {isVisible && (
         <button
-          className="w-12 h-12 fixed bottom-6 right-6 main-border-gray rounded-xl bg-dark2 hover:bg-dark3 cursor-pointer flex justify-center items-center transition z-50"
+          className="main-border-gray fixed right-6 bottom-6 z-50 flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl bg-dark2 transition hover:bg-dark3"
           onClick={scrollToTop}
           aria-label="Scroll to top"
         >

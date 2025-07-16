@@ -17,7 +17,7 @@
   --border: hsl(0 0% 100% / 0.15);
   --border-darker: hsl(0 0% 100% / 0.07);
   --quote-icon: hsl(227 21.3% 75.1%);
-  --scroll: hsl(60 9.1% 97.8% / .3);
+  --scroll: hsl(60 9.1% 97.8% / 0.3);
 
   --breakpoint-xs: 530px;
   --breakpoint-sm: 640px;
@@ -28,7 +28,7 @@
 }
 
 .dark {
-  --scroll: hsl(24 9.8% 10% / .3);
+  --scroll: hsl(24 9.8% 10% / 0.3);
 }
 
 @theme inline {
@@ -123,7 +123,7 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  &> svg {
+  & > svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -143,7 +143,7 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-  &> svg {
+  & > svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -156,7 +156,7 @@
 @utility shape-divider-top-1665696661 {
   overflow: hidden;
   line-height: 0;
-  &> svg {
+  & > svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);

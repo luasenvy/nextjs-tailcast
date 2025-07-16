@@ -30,44 +30,44 @@ const footerData = [
 export function Footer() {
   return (
     <footer aria-label="Site footer">
-      <div className="pt-10 lg:pt-20 lg:pb-16 bg-dark1 radius-for-skewed">
-        <div className="container mx-auto px-4 w-4/5 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
+      <div className="radius-for-skewed bg-dark1 pt-10 lg:pt-20 lg:pb-16">
+        <div className="container mx-auto w-4/5 px-4 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
           <div className="flex flex-wrap">
-            <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
-              <div className="flex justify-center lg:justify-start items-center grow basis-0">
-                <div className="text-white mr-2 text-6xl">
+            <div className="mb-16 w-full lg:mb-0 lg:w-1/3">
+              <div className="flex grow basis-0 items-center justify-center lg:justify-start">
+                <div className="mr-2 text-6xl text-white">
                   <TailcastLogo />
                 </div>
-                <div className="text-white font-['Inter'] font-bold text-xl">Tailcast</div>
+                <div className="font-['Inter'] font-bold text-white text-xl">Tailcast</div>
               </div>
-              <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
+              <p className="mx-auto mt-4 mb-10 text-center text-gray-400 leading-loose sm:w-[22rem] lg:mx-0 lg:w-[20rem] lg:text-left xl:w-[24rem]">
                 Dashboard images were made using free Dark Admin dashboard that you can find
                 <Link
                   href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
                   target="_blank"
-                  className="text-gray-100 ml-1.5 "
+                  className="ml-1.5 text-gray-100 "
                   aria-label="Dark Admin Dashboard"
                 >
                   here.
                 </Link>
               </p>
-              <div className="w-36 mx-auto lg:mx-0">
+              <div className="mx-auto w-36 lg:mx-0">
                 <Link
-                  className="inline-block w-10 h-10 mr-2 p-2 pt-[0.55rem] outlined-button"
+                  className="outlined-button mr-2 inline-block h-10 w-10 p-2 pt-[0.55rem]"
                   href="#"
                   aria-label="Facebook"
                 >
                   <FacebookIcon />
                 </Link>
                 <Link
-                  className="inline-block w-10 h-10 mr-2 p-2 pt-[0.55rem] pl-[0.55rem] outlined-button"
+                  className="outlined-button mr-2 inline-block h-10 w-10 p-2 pt-[0.55rem] pl-[0.55rem]"
                   href="#"
                   aria-label="Twitter"
                 >
                   <TwitterIcon />
                 </Link>
                 <Link
-                  className="inline-block w-10 h-10 mr-2 p-2 pt-[0.55rem] pl-[0.55rem] outlined-button"
+                  className="outlined-button mr-2 inline-block h-10 w-10 p-2 pt-[0.55rem] pl-[0.55rem]"
                   href="#"
                   aria-label="Instagram"
                 >
@@ -75,9 +75,9 @@ export function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="w-full lg:w-2/3 lg:pl-16 hidden lg:flex flex-wrap justify-between">
-              <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
-                <h3 className="mb-6 text-2xl font-bold text-text-primary">Products</h3>
+            <div className="hidden w-full flex-wrap justify-between lg:flex lg:w-2/3 lg:pl-16">
+              <div className="mb-16 w-full md:mb-0 md:w-1/3 lg:w-auto">
+                <h3 className="mb-6 font-bold text-2xl text-text-primary">Products</h3>
                 <ul>
                   {footerData[0].items.map((item, index) => (
                     <li key={`${item}-${index}`} className="mb-4">
@@ -92,8 +92,8 @@ export function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
-                <h3 className="mb-6 text-2xl font-bold text-text-primary">Important Links</h3>
+              <div className="mb-16 w-full md:mb-0 md:w-1/3 lg:w-auto">
+                <h3 className="mb-6 font-bold text-2xl text-text-primary">Important Links</h3>
                 <ul>
                   {footerData[1].items.map((item, index) => (
                     <li key={`${item}-${index}`} className="mb-4">
@@ -109,7 +109,7 @@ export function Footer() {
                 </ul>
               </div>
               <div className="w-full md:w-1/3 lg:w-auto">
-                <h3 className="mb-6 text-2xl font-bold text-text-primary">Company</h3>
+                <h3 className="mb-6 font-bold text-2xl text-text-primary">Company</h3>
                 <ul>
                   {footerData[2].items.map((item, index) => (
                     <li key={`${item}-${index}`} className="mb-4">

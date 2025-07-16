@@ -20,10 +20,10 @@ export function Navbar() {
 
   return (
     <nav
-      className="w-full h-20 flex flex-col justify-center items-center fixed bg-dark1 lg:bg-dark-transparent z-40 lg:backdrop-blur-xl"
+      className="fixed z-40 flex h-20 w-full flex-col items-center justify-center bg-dark1 lg:bg-dark-transparent lg:backdrop-blur-xl"
       aria-label="Main navigation"
     >
-      <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
+      <div className="relative flex w-11/12 items-center justify-between xl:w-10/12 2xl:w-[1280px]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -31,11 +31,11 @@ export function Navbar() {
           exit={{ opacity: 0 }}
         >
           <Link href="/#home" aria-label="Home">
-            <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white mr-2 text-6xl">
+            <div className="flex grow basis-0 items-center justify-start">
+              <div className="mr-2 text-6xl text-white">
                 <TailcastLogo />
               </div>
-              <div className="text-white font-['Inter'] font-bold text-xl">Tailcast</div>
+              <div className="font-['Inter'] font-bold text-white text-xl">Tailcast</div>
             </div>
           </Link>
         </motion.div>
@@ -45,10 +45,10 @@ export function Navbar() {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="hidden lg:flex h-full pl-12 pb-2">
+          <div className="hidden h-full pb-2 pl-12 lg:flex">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <Link
-                className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                className="mr-4 ml-4 h-full cursor-pointer pt-2 font-normal text-2xl text-white leading-6 transition hover:scale-110 lg:font-medium lg:text-base 2xl:mr-6 2xl:ml-6"
                 href={href}
                 aria-label={ariaLabel}
                 key={label}
@@ -64,10 +64,9 @@ export function Navbar() {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="grow basis-0 justify-end hidden lg:flex">
+          <div className="hidden grow basis-0 justify-end lg:flex">
             <Link
-              className="text-white main-border-gray rounded-xl
-           bg-dark2 hover:bg-dark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+              className="main-border-gray flex rounded-xl border-gray-700 bg-dark2 pt-2 pr-8 pb-2 pl-6 text-sm text-white hover:bg-dark3"
               href="https://github.com/luasenvy/nextjs-tailcast"
               target="_blank"
               aria-label="source code"
@@ -78,12 +77,12 @@ export function Navbar() {
           </div>
         </motion.div>
         <div
-          className="lg:hidden flex flex-col px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-dark2"
+          className="flex cursor-pointer flex-col rounded-md border border-gray-600 border-solid px-2 py-3 hover:bg-dark2 lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <div className="w-5 h-0.5 bg-gray-500 mb-1"></div>
-          <div className="w-5 h-0.5 bg-gray-500 mb-1"></div>
-          <div className="w-5 h-0.5 bg-gray-500"></div>
+          <div className="mb-1 h-0.5 w-5 bg-gray-500"></div>
+          <div className="mb-1 h-0.5 w-5 bg-gray-500"></div>
+          <div className="h-0.5 w-5 bg-gray-500"></div>
         </div>
       </div>
       {/* Mobile navbar */}
@@ -95,15 +94,11 @@ export function Navbar() {
             transition={{ duration: 0.3 }}
             exit={{ opacity: 0 }}
           >
-            <div
-              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0 bg-dark1 z-50 w-full 
-        items-center gap-10 pb-10 border-y border-solid border-dark3 pt-10
-        "
-            >
+            <div className="absolute top-4 left-0 z-50 mt-16 flex w-full flex-col items-center gap-10 border-dark3 border-y border-solid bg-dark1 pt-10 pb-10 lg:hidden ">
               {navbarLinks.map(({ label, href, ariaLabel }) => (
                 <Link
                   key={href}
-                  className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
+                  className="mr-4 ml-4 h-full cursor-pointer pt-2 font-normal text-2xl text-white leading-6 transition duration-300 hover:scale-110 lg:font-medium lg:text-base 2xl:mr-6 2xl:ml-6"
                   href={href}
                   onClick={() => setIsOpen(false)}
                   aria-label={ariaLabel}
@@ -112,7 +107,7 @@ export function Navbar() {
                 </Link>
               ))}
               <Link
-                className="outlined-button pl-6 pr-8 pt-2 pb-2 flex"
+                className="outlined-button flex pt-2 pr-8 pb-2 pl-6"
                 href="https://github.com/matt765/Tidestream"
                 target="_blank"
               >
