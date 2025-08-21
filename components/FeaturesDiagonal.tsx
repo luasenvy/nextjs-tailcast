@@ -30,7 +30,7 @@ export function FeaturesDiagonal() {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className=" mx-auto flex flex-col justify-center bg-dark1 pt-12 pb-8 md:w-4/5 lg:flex-row lg:pt-24 lg:pb-20 xl:w-[1050px] 2xl:w-[1150px]">
+        <div className="mx-auto flex flex-col justify-center bg-dark1 pt-12 pb-8 md:w-4/5 lg:flex-row lg:pt-24 lg:pb-20 xl:w-[1050px] 2xl:w-[1150px]">
           <div className="mx-auto flex w-3/4 flex-col lg:mx-unset lg:w-1/2">
             <span className="block-subtitle">Accelerate Your Success</span>
             <h2 className="block-big-title mt-10 mb-8 text-4xl lg:text-5xl">
@@ -42,7 +42,7 @@ export function FeaturesDiagonal() {
               analytics
             </p>
             <button
-              className="contained-button mr-10 h-12 w-[210px] "
+              className="contained-button mr-10 h-12 w-[210px]"
               onClick={() => setIsModalOpen(true)}
               aria-label="Get started"
             >

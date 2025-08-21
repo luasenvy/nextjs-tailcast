@@ -45,7 +45,7 @@ export function Footer() {
                 <Link
                   href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
                   target="_blank"
-                  className="ml-1.5 text-gray-100 "
+                  className="ml-1.5 text-gray-100"
                   aria-label="Dark Admin Dashboard"
                 >
                   here.

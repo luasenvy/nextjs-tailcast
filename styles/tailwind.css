@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root {
   --primary: hsl(239 83.5% 66.7%);
@@ -28,7 +28,7 @@
   --breakpoint-2xl: 1536px;
 }
 
-.dark {
+[data-theme="dark"] {
   --scroll: hsl(24 9.8% 10% / 0.3);
 }
 

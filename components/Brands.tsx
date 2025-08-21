@@ -25,7 +25,7 @@ export function Brands() {
                 <h2 className="mb-2 font-bold text-4xl text-text-primary tracking-normal sm:text-5xl 2xl:text-6xl">
                   Trusted by brands
                 </h2>
-                <h2 className=" font-bold text-4xl text-secondary tracking-normal sm:text-5xl 2xl:text-6xl">
+                <h2 className="font-bold text-4xl text-secondary tracking-normal sm:text-5xl 2xl:text-6xl">
                   all over the world
                 </h2>
               </div>

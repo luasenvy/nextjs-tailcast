@@ -20,7 +20,7 @@ export function Article({ articleData }: ArticleProps) {
   return (
     <div className="relative flex justify-center bg-dark2 pt-2">
       <div className="px-2 sm:px-4">
-        <article className=" mt-16 mb-24 w-full rounded-3xl p-8 text-center sm:mt-24 lg:w-[1200px] 2xl:w-[1400px]">
+        <article className="mt-16 mb-24 w-full rounded-3xl p-8 text-center sm:mt-24 lg:w-[1200px] 2xl:w-[1400px]">
           <header className="mb-12">
             <div className="my-4 text-sm text-text-secondary">{date}</div>
             <h1 className="mb-4 font-bold text-[2rem] text-text-primary xs:text-[2.8rem] lg:text-[3.5rem]">

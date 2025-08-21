@@ -94,7 +94,7 @@ export function Navbar() {
             transition={{ duration: 0.3 }}
             exit={{ opacity: 0 }}
           >
-            <div className="absolute top-4 left-0 z-50 mt-16 flex w-full flex-col items-center gap-10 border-dark3 border-y border-solid bg-dark1 pt-10 pb-10 lg:hidden ">
+            <div className="absolute top-4 left-0 z-50 mt-16 flex w-full flex-col items-center gap-10 border-dark3 border-y border-solid bg-dark1 pt-10 pb-10 lg:hidden">
               {navbarLinks.map(({ label, href, ariaLabel }) => (
                 <Link
                   key={href}

@@ -15,7 +15,7 @@ export const metadata = {
   description: "Tailcast - Landing Page Template ",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
       <body className={cn(inter.className, "break-keep bg-dark2 text-base antialiased")}>

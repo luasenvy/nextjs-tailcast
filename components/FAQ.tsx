@@ -43,7 +43,7 @@ const FAQBox = ({ defaultOpen, title, content }: FAQBoxProps) => {
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex flex-col items-start justify-center p-2">
-        <h3 className=" pt-3 pr-8 content-title sm:pt-0 sm:pr-0">{title}</h3>
+        <h3 className="pt-3 pr-8 content-title sm:pt-0 sm:pr-0">{title}</h3>
         <p
           className={cn("overflow-hidden pt-4 text-text-secondary transition-height duration-300", {
             "max-h-96": isOpen,
