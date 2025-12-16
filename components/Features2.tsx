@@ -19,7 +19,7 @@ export function Features2() {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="mx-auto flex w-11/12 flex-wrap items-center md:pl-4 xl:w-[1300px] xl:pr-16 xl:pl-16 2xl:w-[1450px]">
-          <div className="lg:-mx-4 order-last mx-auto flex w-11/12 flex-wrap justify-center sm:w-3/4 sm:pr-8 lg:order-first lg:w-1/2">
+          <div className="order-last mx-auto flex w-11/12 flex-wrap justify-center sm:w-3/4 sm:pr-8 lg:order-first lg:-mx-4 lg:w-1/2">
             <div className="mb-8 flex w-full flex-col justify-center px-2 md:pl-8 lg:mb-0 lg:pl-16">
               <div className="mb-4 rounded-sm py-3 md:pr-20 md:pl-3 lg:pr-12">
                 <Image

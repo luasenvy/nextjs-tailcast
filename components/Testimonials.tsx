@@ -36,7 +36,7 @@ const testimonialsData = [
 export function Testimonials() {
   return (
     <section className="relative mb-16 flex w-full justify-center bg-dark2 pt-16 lg:mb-32">
-      <div className="-top-16 absolute" id="feedback" />
+      <div className="absolute -top-16" id="feedback" />
       <div className="flex w-full flex-col justify-center lg:w-[1150px]">
         <motion.div
           initial={{ opacity: 0 }}

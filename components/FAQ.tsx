@@ -80,8 +80,8 @@ const FAQBox = ({ defaultOpen, title, content }: FAQBoxProps) => {
 
 export function FAQ() {
   return (
-    <section className="-mt-8 relative overflow-hidden bg-blueGray-50 pt-12 pb-16 sm:mt-0 sm:pt-16">
-      <div className="-top-10 absolute" id="FAQ" />
+    <section className="relative -mt-8 overflow-hidden bg-blueGray-50 pt-12 pb-16 sm:mt-0 sm:pt-16">
+      <div className="absolute -top-10" id="FAQ" />
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

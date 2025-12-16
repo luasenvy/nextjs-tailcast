@@ -32,7 +32,7 @@ const blogData = [
 export function Blog() {
   return (
     <section className="relative flex w-screen justify-center bg-dark2">
-      <div className="-top-16 absolute" id="blog" />
+      <div className="absolute -top-16" id="blog" />
       <div className="bg-dark2 pt-4 pb-0 lg:w-[1000px] xl:w-[1150px] 2xl:w-[1200px]">
         <motion.div
           initial={{ opacity: 0 }}

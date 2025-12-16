@@ -14,7 +14,7 @@ import feature4 from "@/public/images/feature4.webp";
 export function Features1() {
   return (
     <section
-      className="-mt-8 sm:-mt-8 xl:-mt-8 mb-8 w-full bg-dark2 pt-24 sm:mb-24 md:pt-[12vw] lg:pt-16 2xl:mt-0"
+      className="-mt-8 mb-8 w-full bg-dark2 pt-24 sm:-mt-8 sm:mb-24 md:pt-[12vw] lg:pt-16 xl:-mt-8 2xl:mt-0"
       id="features"
     >
       <motion.div
@@ -50,7 +50,7 @@ export function Features1() {
               </ul>
             </div>
           </div>
-          <div className="lg:-mx-4 mx-auto flex w-3/4 flex-wrap justify-center sm:pr-8 lg:w-1/2 lg:pt-10 lg:pl-4 xl:px-8">
+          <div className="mx-auto flex w-3/4 flex-wrap justify-center sm:pr-8 lg:-mx-4 lg:w-1/2 lg:pt-10 lg:pl-4 xl:px-8">
             <div className="mb-8 w-full px-2 sm:w-1/2 lg:mb-0 lg:px-0">
               <div className="mb-4 rounded-sm py-3 pr-2 pl-3">
                 <Image
